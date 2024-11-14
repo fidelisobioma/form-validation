@@ -8,54 +8,69 @@
   </head>
   <body>
     <div class="container">
-      <form novalidate>
-        <div>
-          <label for="email">Email:</label>
-          <br />
-          <input type="email" name="email" id="email" required />
-          <span id="emailmessage"></span>
-        </div>
-        <div>
-          <label for="country">Country:</label>
-          <br />
-          <select name="country" id="country">
-            <option value="Nigeria">Nigeria</option>
-            <option value="USA">USA</option>
-            <option value="Germany">Germany</option>
-          </select>
-        </div>
-        <div>
-          <label for="postalcode">Postal code:</label>
-          <br />
-          <input
-            type="text"
-            pattern="\d{5,}"
-            name="postalcode"
-            id="postalcode"
-            required
-          />
-          <span id="postmessage"></span>
-        </div>
-        <div>
-          <label for="password">Password:</label>
-          <br />
-          <input
-            type="password"
-            minlength="8"
-            name="password"
-            id="password"
-            required
-          />
-          <span id="passmessage"></span>
-        </div>
-        <div>
-          <label for="confirmpassword">Confirm password:</label>
-          <br />
-          <input type="password" name="confirmpassword" id="confirmpassword" />
-          <span id="confmessage"></span>
-        </div>
-        <button class="submit" type="submit">Submit</button>
-      </form>
+      <div class="formcontainer">
+        <form novalidate>
+          <div>
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" name="email" id="email" required />
+            <span id="emailmessage"></span>
+          </div>
+          <div>
+            <label for="country">Country:</label>
+            <br />
+            <select name="country" id="country">
+              <option value="Nigeria">Nigeria</option>
+              <option value="USA">USA</option>
+              <option value="Germany">Germany</option>
+            </select>
+          </div>
+          <div>
+            <label for="postalcode">Postal code:</label>
+            <br />
+            <input
+              type="text"
+              pattern="\d{5,}"
+              name="postalcode"
+              id="postalcode"
+              required
+            />
+            <span id="postmessage"></span>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <br />
+            <input
+              type="password"
+              minlength="8"
+              name="password"
+              id="password"
+              required
+            />
+            <span id="passmessage"></span>
+          </div>
+          <div>
+            <label for="confirmpassword">Confirm password:</label>
+            <br />
+            <input
+              type="password"
+              name="confirmpassword"
+              id="confirmpassword"
+            />
+            <span id="confmessage"></span>
+          </div>
+          <button class="submit" type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <div class="success">
+      <div>
+        <h1>success!</h1>
+        <div class="tick"></div>
+        <p>
+          Thanks for registering with us. Ready to give you a five star service
+        </p>
+      </div>
     </div>
     <script src="script.js"></script>
   </body>

@@ -6,12 +6,44 @@
 }
 body {
   background-color: #222222;
+}
+.container {
+  /* background-color: #fff; */
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
 }
-.container {
+
+.success {
+  background-color: #222222;
+  position: absolute;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+}
+.success > div {
+  margin-top: 120px;
+}
+.showsuccess {
+  visibility: visible;
+}
+.tick {
+  width: 30px;
+  height: 45px;
+  border-right: 8px solid rgb(107, 5, 56);
+  border-bottom: 8px solid rgb(107, 5, 56);
+  transform: rotate(45deg);
+  margin: auto;
+  margin-bottom: 30px;
+}
+.formcontainer {
   width: 450px;
   border-radius: 10px;
   padding: 10px;
